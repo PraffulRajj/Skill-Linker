@@ -2,13 +2,13 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}", // This line is crucial
   ],
   theme: {
     extend: {
       colors: {
-        'primary': '#FF6F00', // Vibrant Orange
-        'secondary': '#0A2540', // Navy Blue
+        'primary': '#FF6F00',
+        'secondary': '#0A2540',
       },
       fontFamily: {
         'sans': ['Poppins', 'sans-serif'],
@@ -17,3 +17,4 @@ export default {
   },
   plugins: [],
 }
+
