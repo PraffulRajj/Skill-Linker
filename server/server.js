@@ -3,12 +3,15 @@ import http from 'http';
 import { Server } from 'socket.io';
 import cors from 'cors';
 import dotenv from 'dotenv';
+
+// Load environment variables right at the top
+dotenv.config();
+
+// Now, import other files that use environment variables
 import connectDB from './config/db.js';
 import authRoutes from './routes/authRoutes.js';
 import serviceRoutes from './routes/serviceRoutes.js';
 
-// Load environment variables
-dotenv.config();
 
 // Connect to Database
 connectDB();
